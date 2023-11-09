@@ -1,0 +1,90 @@
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Submit your Blog</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead">Share your blog with thousands of web developers across the world. Fill our form to get started.</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+
+    <% if(infoSubmitObj != '') { %>
+        <div class="col-8 alert alert-success" role="alert">
+            <%= infoSubmitObj %>
+        </div>
+    <% } %>
+
+    <% if(infoErrorObj != '') { %>
+        <div class="col-8 alert alert-danger" role="alert">
+            <%= infoErrorObj[0].message %>
+        </div>
+    <% } %>
+
+
+    <div class="col-8">
+        <form action="/submit-blog" enctype="multipart/form-data" method="post">
+
+            <div class="row g-3">
+
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+
+                <div class="col-12">
+                    <label for="name" class="form-label">Blog Name</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description" class="form-control" id="description" cols="30" rows="4"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <label for="name" class="form-label">Regional foods</label>
+                    <div class="foodList">
+                        <div class="foodDiv mb-1">
+                            <input type="text" name="regionalFoods" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="button" class="btn btn-outline-primary" id="addFoodBtn">+</button>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="category">Select Category</label>
+                    <select class="form-select form-cotrol" name="category" aria-label="Category">
+                        <option selected>Select Category</option>
+                        <option value="India">India</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Morocco">Morocco</option>
+
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label for="image">Image</label>
+                    <input type="file" class="form-control" name="image" accept="/image/*">
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit Blog</button>
+                </div>
+
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+</div>
