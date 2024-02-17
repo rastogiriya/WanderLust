@@ -1,0 +1,204 @@
+<style>
+  p{
+      font-size: 21px;
+  }
+  .hero {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #666;
+  }
+
+  .content {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  .content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .content ul li {
+    margin-bottom: 10px;
+  }
+
+  .image-gallery {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .image-gallery h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .image-gallery p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  .gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  .mission-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .mission-card {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .mission-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .mission-card p {
+    font-size: 21px;
+    color: #666;
+  }
+</style>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 style="font-size: 55px;">About Us</h1>
+      <p class="lead" style="font-size: 21px;">
+        At WanderLust, we are fueled by a deep passion for travel and
+        exploration. Our mission is to bring you the most recent travel updates,
+        captivating articles, and profound insights into the world of
+        wanderlust. Whether you're a travel enthusiast, an adventure seeker, or
+        simply intrigued by the latest destination trends, we've got your
+        journey covered.
+
+        <br />
+        With a team of devoted writers and seasoned explorers, we are committed
+        to delivering top-notch content that is not only informative but also
+        evokes the spirit of adventure. From detailed destination reviews to
+        travel industry insights, our goal is to be your ultimate source for all
+        things wanderlust
+      </p>
+    </div>
+  </section>
+
+  <section class="image-gallery">
+    <div class="container">
+      <h2 style="font-size: 45px;">Explore the World of Travelling</h2>
+      <p style="font-size: 21px;" class="lead">
+        Embark on a captivating visual journey through the enchanting world of
+        travel and exploration. Uncover the latest destinations, unique
+        experiences, and groundbreaking travel technologies that are shaping the
+        future of wanderlust.
+      </p>
+      <div class="gallery">
+        <img src="img/about-01.jpg" alt="" />
+        <img src="img/about-02.jpg" alt="" />
+        <img src="img/about-03.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="content">
+  <div class="container">
+    <h2 style="font-size: 45px;">Our Mission</h2>
+    <div class="row mission-cards justify-content-center">
+      <div class="col-md-4">
+        <div class="mission-card">
+          <h3>Inspire Innovation</h3>
+          <p class="lead">
+            We strive to inspire a sense of wanderlust by offering captivating
+            insights, enriching travel narratives, and in-depth exploration of
+            diverse destinations.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mission-card">
+          <h3>Empower Wanderlust</h3>
+          <p class="lead">
+            Our mission is to empower wanderlust by delivering inspiring,
+            reliable, and easily accessible information about diverse travel
+            destinations and experiences.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mission-card">
+          <h3>Connect Explorers</h3>
+          <p class="lead">
+            We aim to connect communities of travel enthusiasts, seasoned
+            explorers, and curious individuals to foster collaboration and
+            collective growth in the realm of wanderlust.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
